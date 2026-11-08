@@ -3,3 +3,8 @@
 *.log
 .DS_Store
 Thumbs.db
+
+# Local account state and shared working notes stay outside the public skill.
+/local/
+/knowledge-root/
+/SESSION.md

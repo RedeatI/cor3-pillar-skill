@@ -1,0 +1,4 @@
+interface:
+  display_name: "COR3 Pillar"
+  short_description: "推进当前可做内容，探索卡点，核验奖励，按实际时点续办并共建实战知识"
+  default_prompt: "使用 $cor3-pillar 读取本账号进度与共享知识库，按现有授权完成当前可做内容并核验结果，收尾后安排已授权的续办。"
