@@ -1,4 +1,4 @@
 interface:
   display_name: "COR3 Pillar"
-  short_description: "推进当前可做内容，探索卡点，核验奖励，按实际时点续办并共建实战知识"
-  default_prompt: "使用 $cor3-pillar 读取本账号进度与共享知识库，按现有授权完成当前可做内容并核验结果，收尾后安排已授权的续办。"
+  short_description: "推剧情、清日常、刷市场 REP、做 Echoes、盯界面对账并按实读刷新时间约下一轮"
+  default_prompt: "使用 $cor3-pillar，先读本账号进度和共享知识库，按已有预算和插件授权把这轮能做的剧情、市场委托、DAILY OPS 和 Echoes 做完并盯界面确认到账，收尾关掉游戏页再按实际刷新时间约下一轮。"
