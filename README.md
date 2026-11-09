@@ -21,6 +21,7 @@
 
 ## 2026-11-09 更新
 
+- 补齐黑市与各市场 REP 推进：与账号 Renown 分开记录；等级锁阻塞剧情/软件时做对应市场委托，结算后核对 REP，升级后重新检查解锁。
 - 一轮覆盖剧情、消息、文件、地图、各市场、日常和奖励；解锁新内容后继续推进，按具体阻碍决定何时收尾。
 - 点击后等待实际反馈；列表刷新后重新锁定任务，处理确认弹窗，防止重复付款和漏领奖。
 - 卡点按可见证据提出假设，合理重试并探索其他路径；未知原因不写成永久不可做。
@@ -31,6 +32,7 @@
 ## 参考与模板
 
 - [执行流程](cor3-pillar/SKILL.md)
+- [黑市入口、REP 委托循环与解锁条件](cor3-pillar/references/market-reputation.md)
 - [阶段性实测：配装、路线、佣兵和界面问题](cor3-pillar/references/field-notes.md)
 - [后台控制与卡顿排查](cor3-pillar/references/background-control.md)
 - [共享知识库维护约定](cor3-pillar/references/knowledge-base.md)
