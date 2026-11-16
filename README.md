@@ -54,9 +54,21 @@
 - 定下工具分工：浏览器控制负责读面板和接交任务，COR3 Helper 只辅助用户允许的固定解谜，agent-desktop 负责工具栏、扩展面板和原生窗口补位。
 - 定下收尾记录和验收规则：把声望、累计收入、余额、完成项、卡点和下次可做时间分开记，看游戏界面真到账或状态更新才算完成。
 
+## 最近整理 · 2026-11-16
+
+- 精简主流程，卡点、配装远征、总览与续办改为按需参考。
+- 补充 August/September 实测、Reliability 独立记录和专家门槛核查；5.0 对应指标尚未确认，不当作解锁保证。
+- 新增 Agent Desktop 的抢焦点、引用失效、送达未知和结果核验说明，区分工具文档与游戏实测。
+- 本机路径、账号映射、线程标识与原始进度不公开。
+
 ## 参考与模板
 
 - [执行流程](cor3-pillar/SKILL.md)
+- [常见卡点](cor3-pillar/references/known-blockers.md)
+- [配装、远征与专家核查](cor3-pillar/references/equipment-expeditions.md)
+- [收尾、总览与续办](cor3-pillar/references/handoff-and-resume.md)
+- [Agent Desktop 易错操作](cor3-pillar/references/agent-desktop-pitfalls.md)
+- [近期实测经验](cor3-pillar/references/lessons.md)
 - [黑市入口、REP 刷级与各市场解锁](cor3-pillar/references/market-reputation.md)
 - [Echoes of Planetside 路线、每日双线与碎片核对](cor3-pillar/references/echoes.md)
 - [实战踩坑汇总：配装、路线、远征与界面](cor3-pillar/references/field-notes.md)
