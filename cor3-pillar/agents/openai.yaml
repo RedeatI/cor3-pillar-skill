@@ -1,4 +1,4 @@
 interface:
   display_name: "COR3 Pillar"
-  short_description: "推剧情、清日常、刷市场 REP、做 Echoes、盯界面对账并按实读刷新时间约下一轮"
-  default_prompt: "使用 $cor3-pillar，先读本账号进度和共享知识库，按已有预算和插件授权把这轮能做的剧情、市场委托、DAILY OPS 和 Echoes 做完并盯界面确认到账，收尾关掉游戏页再按实际刷新时间约下一轮。"
+  short_description: "用 Relay 接续市场单轮，核实游戏结果后推进剧情、日常与远征"
+  default_prompt: "使用 $cor3-pillar，先核对本号与 Relay 队列，沿用已授权的预算和开关；已有单轮只跟进结果，空闲后继续剧情，保留游戏页并更新交接。"

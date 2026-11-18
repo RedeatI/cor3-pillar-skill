@@ -1,12 +1,12 @@
 # COR3 Pillar Skill
 
-给 Codex 和其他 Agent 用的 COR3 推号手册：接手已登录账号后，顺着做完当前能做的剧情、委托、Game Center 日常（DAILY OPS）、市场 REP、Echoes 和配装远征，盯着界面确认到账才算完；踩到攻略没写的坑记进共享库，有实际刷新或冷却时间再约下一轮。
+给已登录 COR3 账号的推进手册。先看当前账号的 Relay 在做什么，已有市场单轮就等它收尾；核实任务结果后，接着跑剧情、DAILY OPS、Echoes 和可做的远征。
 
 ## 开始使用
 
 1. 准备一个能操作浏览器的 Agent，你自己先登录好 [COR3](https://cor3.gg/)。
-2. 想让插件帮忙自动解固定小游戏（Decrypt / ICE Wall / Simple Decrypt），按 [COR3 Helper 项目说明](https://github.com/Femtoce11/cor3-helper)装好，只打开你允许的开关。
-3. 需要点浏览器工具栏、扩展弹窗或切 Windows 原生窗口时，再接入 [agent-desktop](https://agent-browser.dev/desktop)，提前看清 Windows 下的平台限制。
+2. 使用 Chrome 或 Edge 时，安装对应的 [COR3 Relay 2.2.1](https://github.com/RedeatI/cor3-relay/releases/tag/v2.2.1-relay)。在游戏页左下角的 C3 查看任务、配装、远征和状态。已有授权和开关继续沿用。
+3. 优先使用当前游戏页。确需操作工具栏或原生窗口时，可使用已获授权的 [agent-desktop](https://agent-browser.dev/desktop)。仅允许后台操作时，应先核实工具能保持前台窗口不变。
 4. 把仓库里的 `cor3-pillar` 文件夹放进 Agent 的 skills 目录，或者让支持从 GitHub 安装的 Codex 直接执行：
 
    > 安装这个 Skill：https://github.com/RedeatI/cor3-pillar-skill/tree/main/cor3-pillar
@@ -15,7 +15,7 @@
 
 开跑时可以直接把下面这段话发给 Agent：
 
-> 使用 $cor3-pillar，先读本账号进度，把当前能做的剧情、市场委托、DAILY OPS 和 Echoes 都做了。按我给的预算和插件开关来，禁开 Auto Job、禁重置、买东西前先查重；遇到拿不准的委托，只要余额和接单名额够、留足已承诺支出就先接了试。等剩下的线都有了明确卡点或冷却，再按游戏里显示的刷新时间约下一次单次运行。收尾关掉游戏标签页，浏览器和登录状态留着。
+> 使用 $cor3-pillar，只接手分给这个聊天的账号。先看当前页的账号、C3 队列和限时小游戏。已有市场单轮就跟进结果；我授权手动跑一轮时只启动一次。沿用原预算、任务类型和开关。空闲后继续主线、DAILY OPS 和 Echoes，核实到账并更新总览。保留游戏页，按已有续办约定安排下一轮。
 
 要不要自动续办、先接未知任务、花钱买配装或开插件开关，全按你自己的授权来。不用 Codex 的 Agent 直接读 [SKILL.md](cor3-pillar/SKILL.md) 就行，按它自己的浏览器和定时接口去跑；这个 skill 本身是一份纯文本操作手册，需搭配外部 Agent 运行。
 
@@ -54,7 +54,11 @@
 - 定下工具分工：浏览器控制负责读面板和接交任务，COR3 Helper 只辅助用户允许的固定解谜，agent-desktop 负责工具栏、扩展面板和原生窗口补位。
 - 定下收尾记录和验收规则：把声望、累计收入、余额、完成项、卡点和下次可做时间分开记，看游戏界面真到账或状态更新才算完成。
 
-## 最近整理 · 2026-11-16
+## 最近整理 · 2026-11-18
+
+- 新增 [Relay 2.2.1 接手与交接](cor3-pillar/references/relay-workflow.md)。可以在 C3 收起时查看进度，区分正在运行、结果待核对和已结束；刷新到期、工具超时和收尾留页都有对应处理。
+
+### 2026-11-16
 
 - 精简主流程，卡点、配装远征、总览与续办改为按需参考。
 - 补充 August/September 实测、Reliability 独立记录和专家门槛核查；5.0 对应指标尚未确认，不当作解锁保证。
@@ -82,12 +86,12 @@
 
 这里整理的是几个号实战跑出来的经验，还没跑完从零号一路冲到 The Pillar 的全程。文档里记的价格、软件 Power 和节点路线只对应当时测过的样本；游戏改版后目标门槛、活动要求和档位优惠随时可能调，开跑前看一眼你眼前的游戏界面就行。
 
-[COR3 Helper](https://github.com/Femtoce11/cor3-helper) 是第三方插件，网页更新后随时可能失灵；开关显示 ON 之后，还是要回游戏看谜题到底解没解过。Windows 下就算连着后台或传了 `background:true`，操作时仍可能把窗口拉到前台，换了浏览器或机器先做一次只读测试。Skill 本身是一套操作手册，跑起来要靠你自己的模型额度、控制工具和授权，具体能推多快、几天能毕业，以各号实际进度和本地环境为准。
+游戏更新后，插件可能需要适配。实际领奖、换装、派遣和小游戏结果以本号游戏反馈为准。工具的后台读取和后台输入能力需要分别核实。
 
 ## 工具来源
 
 - [COR3](https://cor3.gg/) · [COR3 社区攻略](https://wiki.mistarg.cn/index.php/COR3)
-- [COR3 Helper](https://github.com/Femtoce11/cor3-helper)
+- [COR3 Relay](https://github.com/RedeatI/cor3-relay)
 - [agent-desktop](https://agent-browser.dev/desktop) · [Windows 支持范围](https://agent-browser.dev/desktop/platforms/windows)
 
 本仓库原创文字采用 MIT 许可证。游戏、插件和其他工具分别遵循其自己的条款与许可证。
